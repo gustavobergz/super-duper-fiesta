@@ -18,5 +18,19 @@ programa {
     leia(num2)
 
     escreva("O resultado da subtração desses dois números é: ", num - num2)
+
+
+
+
+    escreva("Calculadora de multiplicação \n")
+    escreva("Digite o primeiro número: ")
+    leia(num)
+
+    escreva("Digite o segundo número: ")
+    leia(num2)
+
+    escreva("O resultado da multiplicação desses dois números é: ", num * num2)
+    
+    
   }
 }

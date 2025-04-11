@@ -21,9 +21,10 @@ Desenvolver uma calculadora de soma, subtração e multiplicação
 - Criei a função de subtração na nossa calculadora e adicionei no arquivo base, também atualizei as informações do README
 
 ### Maria Luiza
--
--
--
+- criei uma chave SSH
+- clonei o repositório do gabriel
+- criei a conta de multiplicação no portugoul e alterei o README
+
 
 ## Comandos utilizados
 ### Gustavo:
@@ -293,5 +294,61 @@ no changes added to commit (use "git add" and/or "git commit -a")
 Usuario@DESKTOP-2B7IPGR MINGW64 ~/documents/atividade/super-duper-fiesta (main)
 ### Maria Luiza
 
+compuni@Lab6m43 MINGW64 ~/Documents/atividade
+$ rm -f ~/.ssh/id_rsa*
+
+compuni@Lab6m43 MINGW64 ~/Documents/atividade
+$ ssh-keygen -t rsa -b 4096 -C marialuizinha.mma@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/compuni/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/compuni/.ssh/id_rsa
+Your public key has been saved in /c/Users/compuni/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:jynISC1Cu78pVjIQulmVThWczO85tOxeq36fPxAvras marialuizinha.mma@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|     *oo         |
+|.   + =          |
+|.o +   .         |
+|+ o..   o   .    |
+|o=o .  +So   +   |
+|o=.= .  *+  o o  |
+| .= o ..o.o  +   |
+| o. .  ........  |
+|. .+.  o+oEo+o.. |
++----[SHA256]-----+
+
+compuni@Lab6m43 MINGW64 ~/Documents/atividade
+$ eval "$(ssh-agent -s)"
+Agent pid 1258
+
+compuni@Lab6m43 MINGW64 ~/Documents/atividade
+$
+
+compuni@Lab6m43 MINGW64 ~/Documents/atividade
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/compuni/.ssh/id_rsa (marialuizinha.mma@gmail.com)
+
+compuni@Lab6m43 MINGW64 ~/Documents/atividade
+$ clip < ~/.ssh/id_rsa.pub
+
+compuni@Lab6m43 MINGW64 ~/Documents/atividade
+$ ssh -T git@github.com
+Hi maluos! You've successfully authenticated, but GitHub does not provide shell access.
+
+compuni@Lab6m43 MINGW64 ~/Documents/atividade
+$ git clone git@github.com:gustavobergz/super-duper-fiesta.git
+Cloning into 'super-duper-fiesta'...
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 14 (delta 2), reused 6 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (14/14), 5.20 KiB | 532.00 KiB/s, done.
+Resolving deltas: 100% (2/2), done.
+
+
 
 ## Observações
+deu problema na chave da maria luiza mas conseguimos arrumar
